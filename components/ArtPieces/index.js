@@ -23,3 +23,4 @@ export default function ArtPieces({ pieces }) {
     </ul>
   );
 }
+

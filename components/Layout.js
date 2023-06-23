@@ -1,4 +1,6 @@
 import Navigation from "./navigation/index.js";
+import Head from "next/head.js";
+
 
 export default function Layout({ children }) {
   return (
@@ -6,7 +8,6 @@ export default function Layout({ children }) {
       <Head>
         <title>Art Gallery</title>
       </Head>
-      <Main></Main>
       <Navigation />
     </>
   );

@@ -1,27 +1,26 @@
 import React from "react";
 import Image from "next/image";
 
-function randomArtPiece(allArtPieces) {
+function randomPiece(allArtPieces) {
   const randomIndex = Math.floor(Math.random() * allArtPieces.lenght);
   return allArtPieces[randomIndex];
 }
 
+
 export default function Spotlight({ image, artist }) {
-  /*     const data = // fetch!!!!
-   */ const randomArt = randomArtPiece(allArtPieces);
 
   return (
     <>
       <h2>Spotlight</h2>
       <div>
-        <p>{randomArt.name}</p>
+        <p>{randomPiece.name}</p>
         <Image
-          src={randomArt.image}
-          alt={randomArt.name}
+          src={randomPiece.image}
+          alt={randomPiece.name}
           width={500}
           height={500}
         />
-        <p>Artist: {randomArt.artist}</p>
+        <p>Artist: {randomPiece.artist}</p>
       </div>
     </>
   );

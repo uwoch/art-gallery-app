@@ -1,18 +1,18 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-export default function ArtPieceDetails({ image, title, artist, year, genre }) {
+export default function ArtPieceDetails({ image, name, artist, year, genre }) {
   const router = useRouter();
 
   function handleGoBack() {
-    router.push("../Art-Pieces");
+    router.push("/art-pieces");
   }
 
   return (
     <>
       <div>
-        <h2>Title: {title}</h2>
-        <Image src={image} alt={title} width={300} height={300} />
+        <h2>Title: {name}</h2>
+        <Image src={image} alt={name} width={300} height={300} />
         <p>Artist: {artist}</p>
         <p>Year: {year}</p>
         <p>Genre: {genre} </p>

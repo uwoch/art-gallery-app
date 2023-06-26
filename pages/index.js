@@ -1,34 +1,10 @@
-
 import React from "react";
-import ArtPieces from "../components/ArtPieces/index.js";
+import Spotlight from "@/components/Spotlight/Spotlight";
 
-export default function HomePage() {
-
-
+export default function SpotlightPage({ artpieces }) {
   return (
     <div>
-      <h1>All Art Pieces</h1>
-      <ArtPieces pieces={data} />
+      <Spotlight pieces={artpieces} />
     </div>
   );
 }
-/* const fetcher = (url) => fetch(url).then((response) => response.json());
-
-function AllArtPieces () {
-  const { data } = useSWR("https://example-apis.vercel.app/api/art/${slug}", fetcher);
-} */
-
-/* const fetcher = async (...args) => {
-  const response = await fetch(...args);
-  if (!response.ok) {
-    throw new Error(`Request with ${JSON.stringify(args)} failed.`);
-  }
-  return await response.json();
-};
-
- function AallArtPieces({ Component, pageProps }) {
-  const { data } = useSWR(
-    "https://example-apis.vercel.app/api/art",
-    fetcher
-  );
-  } */

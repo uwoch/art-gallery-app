@@ -12,13 +12,13 @@ export default function ArtPieceDetailsPage({ artpieces }) {
   if (!currentArtPiece) {
     return null;
   }
-  const { imageSource, title, artist, year, genre } = currentArtPiece;
+  const { imageSource, name, artist, year, genre } = currentArtPiece;
 
   return (
     <div>
       <ArtPieceDetails
         image={imageSource}
-        title={title}
+        name={name}
         artist={artist}
         year={year}
         genre={genre}

@@ -7,6 +7,13 @@ const Headline = styled.h1`
   font-family: "Gill Sans", sans-serif;
 `;
 
+const Main = styled.main`
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+
 
 export default function Layout({ children }) {
   return (
@@ -15,8 +22,11 @@ export default function Layout({ children }) {
         <title>Art Gallery</title>
       </Head>
       <Headline>Art Gallery</Headline>
+      <Main>
       {children}
+      </Main>
       <Navigation />
+
     </>
   );
 }

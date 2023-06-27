@@ -6,10 +6,10 @@ const NavList = styled.ul`
   list-style: none;
   border-radius: 100%;
   justfy-content: center;
-  /* position: fixed;
+  position: fixed;
   margin-top: 30px;
   width: 100%;
-  bottom: 0; */
+  bottom: 0;
 `;
 
 
@@ -17,7 +17,7 @@ const NavLink = styled(Link)`
 font-family: "Gill Sans", sans-serif;
 font-size: 20px;
 color: #16537e;
-background-color: none;
+background-color: white;
 border: none;
 padding: 10px;
 justfy-content: center;
